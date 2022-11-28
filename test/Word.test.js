@@ -23,7 +23,7 @@ describe('Word class', () => {
   });
 
   describe('guessedCorrectly ', () => {
-    it('returns true if all letters are correct', () => {
+    it.only('returns true if all letters are correct', () => {
       const word = new Word('hi');
       word.guessLetter('h');
       word.guessLetter('i');
